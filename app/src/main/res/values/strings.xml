@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ThriftApp</string>
+
+    <string name="basis_prompt">Select basis:</string>
+
+    <string-array name="basis">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+    </string-array>
+
+    <string name="title_activity_dashboard">dashboardActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

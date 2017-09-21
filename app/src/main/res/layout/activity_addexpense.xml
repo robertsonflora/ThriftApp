@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.josh.thriftapp.addExpenseActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add expenses:"
+        android:textSize="30dp"
+        android:fontFamily="casual"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="85dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/expenseDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="51dp"
+        android:ems="8"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/expenseAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="6"
+        android:inputType="textPersonName"
+        android:layout_alignBaseline="@+id/expenseDescription"
+        android:layout_alignBottom="@+id/expenseDescription"
+        android:layout_toRightOf="@+id/expenseDescription" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:fontFamily="casual"
+        android:layout_above="@+id/expenseAmount"
+        android:layout_alignLeft="@+id/expenseDescription"
+        android:layout_alignStart="@+id/expenseDescription"
+        android:text="Expense Description:" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:fontFamily="casual"
+        android:text="Amount:"
+        android:layout_above="@+id/expenseAmount"
+        android:layout_toRightOf="@+id/expenseDescription"
+        android:layout_toEndOf="@+id/expenseDescription" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/button2"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/expenseAmount"
+        android:layout_toStartOf="@+id/expenseAmount" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Another"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignRight="@+id/expenseAmount"
+        android:layout_alignEnd="@+id/expenseAmount" />
+</RelativeLayout>
